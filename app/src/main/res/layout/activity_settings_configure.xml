@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hotspotimage"
+    tools:context=".SettingsConfigure">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/configNavbar"
+        android:layout_width="414dp"
+        android:layout_height="60dp"
+        android:background="#FF9800"
+        app:itemIconTint="#AF2B01"
+        app:itemTextColor="#AF2B01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+
+    <ToggleButton
+        android:id="@+id/tbUnits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="170dp"
+        android:backgroundTint="#FF9800"
+        android:checked="true"
+        android:text="Kilometres"
+        android:textOff="Miles"
+        android:textOn="Kilometres"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="20dp"
+        android:text="Metric/Imperial System"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtMaxDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Maximum Distance"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbUnits" />
+
+    <Button
+        android:id="@+id/btnSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#FF9800"
+        android:text="Set"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pbirds"
+    tools:context=".Home">
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="323dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="150dp"
+        android:background="@color/light_orange"
+        android:text="Explore The Popular Birds in Gauteng"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navbar"
+        android:layout_width="414dp"
+        android:layout_height="60dp"
+        android:background="#FF9800"
+        app:itemIconTint="#AF2B01"
+        app:itemTextColor="#AF2B01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+
+    <ImageView
+        android:id="@+id/imageButton2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:srcCompat="@drawable/eagle" />
+
+    <ImageView
+        android:id="@+id/imageButton4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:srcCompat="@drawable/hawkvseagles" />
+
+    <ImageView
+        android:id="@+id/imageButton5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:srcCompat="@drawable/humming_birda" />
+
+    <ImageView
+        android:id="@+id/imageButton6"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:srcCompat="@drawable/top" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

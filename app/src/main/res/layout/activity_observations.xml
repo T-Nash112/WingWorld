@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/booksimage"
+    tools:context=".Observations">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navbar"
+        android:layout_width="414dp"
+        android:layout_height="60dp"
+        android:background="#FF9800"
+        app:itemIconTint="#AF2B01"
+        app:itemTextColor="#AF2B01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="150dp"
+        android:text="Your Observation"
+        android:textAllCaps="true"
+        android:textColor="#FF9800"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtObser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="Write your observation"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgView" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Upload"
+        app:layout_constraintBottom_toTopOf="@+id/navbar"
+        app:layout_constraintEnd_toStartOf="@+id/btnView"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="20dp"
+        android:text="View"
+        app:layout_constraintBottom_toTopOf="@+id/navbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnUpload" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="404dp"
+        android:layout_height="352dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/bird_observation" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Add Observation"
+        app:layout_constraintBottom_toTopOf="@+id/navbar"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpload"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

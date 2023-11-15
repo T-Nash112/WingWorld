@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Settings">
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="257dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnViewProfile"
+        android:layout_width="409dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#FF9800"
+        android:text="View Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView30" />
+
+    <Button
+        android:id="@+id/btnTerms"
+        android:layout_width="408dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF9800"
+        android:text="Terms and Conditions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConfigure" />
+
+    <Button
+        android:id="@+id/btnConfigure"
+        android:layout_width="407dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF9800"
+        android:text="Configure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewProfile" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="407dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF9800"
+        android:text="Log Out"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTerms" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navbar"
+        android:layout_width="414dp"
+        android:layout_height="60dp"
+        android:background="#FF9800"
+        app:itemIconTint="#AF2B01"
+        app:itemTextColor="#AF2B01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

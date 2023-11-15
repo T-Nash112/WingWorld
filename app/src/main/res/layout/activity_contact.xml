@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Contact">
+
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        app:srcCompat="@drawable/baseline_contact_phone_24"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="48dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/baseline_email_24"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="47dp"
+        android:layout_height="49dp"
+        app:srcCompat="@drawable/baseline_add_location_24"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="229dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="181dp"
+        android:layout_height="36dp"
+        android:text="+12 123 4567"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="183dp"
+        android:layout_height="44dp"
+        android:text="wingedworld@gmail.com"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:text="239 Prestious St, Pretoria CBD"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="229dp" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="302dp"
+        android:layout_height="352dp"
+        app:srcCompat="@drawable/map"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="295dp" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="257dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navbar"
+        android:layout_width="414dp"
+        android:layout_height="60dp"
+        android:background="#FF9800"
+        app:itemIconTint="#AF2B01"
+        app:itemTextColor="#AF2B01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "655377057384",
+    "project_id": "wingworld-c40fb",
+    "storage_bucket": "wingworld-c40fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655377057384:android:260d5fc4ea63aacc649ddd",
+        "android_client_info": {
+          "package_name": "com.example.opsc6312"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEwF4mLYGTEQ_m3QDsrkS62PP-bo_gowk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

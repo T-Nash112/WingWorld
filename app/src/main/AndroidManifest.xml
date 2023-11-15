@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Winged World"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Opsc6312"
+        tools:targetApi="31">
+        <activity
+            android:name=".Top5"
+            android:exported="false" />
+        <activity
+            android:name=".HawkVsEagle"
+            android:exported="false" />
+        <activity
+            android:name=".Humming"
+            android:exported="false" />
+        <activity
+            android:name=".Eagle"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsConfigure"
+            android:exported="false" />
+        <activity
+            android:name=".ViewObservations"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Observations"
+            android:exported="false" />
+        <activity
+            android:name=".Contact"
+            android:exported="false" />
+        <activity
+            android:name=".Hotspot"
+            android:exported="false" />
+        <activity
+            android:name=".ExploreBirds"
+            android:exported="false" />
+        <activity
+            android:name=".PopularBirds"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".TsAndCs"
+            android:exported="false" />
+        <activity
+            android:name=".GetStarted"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
